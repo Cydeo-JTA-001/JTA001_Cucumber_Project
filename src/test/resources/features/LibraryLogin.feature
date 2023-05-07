@@ -1,4 +1,4 @@
-@wip
+
 Feature: The user can login
 
 #  we have 2 types of users
