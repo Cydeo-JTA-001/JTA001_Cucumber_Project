@@ -15,10 +15,10 @@ public class LoginStepDefs {
 
 
 
-//    @When("user enters student username")
-//    public void userEntersStudentUsername() {
-//        System.out.println("user enters student username");
-//    }
+    @When("user enters student username")
+    public void userEntersStudentUsername() {
+        System.out.println("user enters student username");
+    }
 
     @When("user enters librarian username")
     public void userEntersLibrarianUsername() {

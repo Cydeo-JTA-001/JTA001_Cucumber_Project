@@ -1,3 +1,4 @@
+@US2
 Feature: Library login feature
 
   User Story:
@@ -6,7 +7,7 @@ Feature: Library login feature
 # this is how we comment in feature file
 
 
-@wip
+
   Scenario: Login as librarian
     Given user is on the login page of the library application
     When user enters librarian username
@@ -15,7 +16,7 @@ Feature: Library login feature
 
 
 
-@wip
+
   Scenario: Login as student
     Given user is on the login page of the library application
     When user enters student username
