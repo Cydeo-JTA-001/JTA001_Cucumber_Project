@@ -15,7 +15,7 @@ public class BarrowBookStepDefs {
     }
     @Then("the user see the confirmation message")
     public void the_user_see_the_confirmation_message() {
-        Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//*[@class=\"toast-message\"]")).isDisplayed());
+        Assert.assertTrue("Confirmation message did not appear", Driver.getDriver().findElement(By.xpath("//*[@class=\"toast-message\"]")).isDisplayed());
 
        // Driver.closeDriver();     this step is executed in Hooks in After method
 

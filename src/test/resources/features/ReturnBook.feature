@@ -1,7 +1,7 @@
 Feature: Student can return a book
 
-  @wip
-  Scenario: Student can return a barrowed book
+
+  Scenario: Student can return a borrowed book
     Given the user is on the login page
     When the user enters valid credentials
     And the user clicks sign in
