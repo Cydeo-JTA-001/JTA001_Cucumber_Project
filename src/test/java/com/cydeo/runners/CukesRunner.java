@@ -15,7 +15,7 @@ plugin = {
         glue = "com/cydeo/stepdefs",
 
         dryRun = false,
-        tags = "@wip",
+        tags = "",
         publish = true //generating a report with public link
 )
 public class CukesRunner {}
