@@ -13,6 +13,7 @@ public class LoginStepDef {
     @Given("user is on the login page of the library application")
     public void user_is_on_the_login_page_of_the_library_application() {
         System.out.println("user is on the loginpage");
+        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
     }
     @When("user enters librarian username")
     public void user_enters_librarian_username() {
@@ -24,6 +25,7 @@ public class LoginStepDef {
         loginPage.passWord.sendKeys(ConfigurationReader.getProperty("librarian_password"));
         loginPage.signIn.click();
         Thread.sleep(5000);
+
 
     }
     @Then("user should see the dashboard")
