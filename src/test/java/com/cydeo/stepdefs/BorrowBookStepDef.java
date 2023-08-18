@@ -7,6 +7,7 @@ import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 
 public class BorrowBookStepDef {
@@ -26,14 +27,16 @@ public class BorrowBookStepDef {
       loginPage.signIn.click();
     }
     @When("the user clicks first borrow book button")
-    public void the_user_clicks_first_borrow_book_button() {
+    public void the_user_clicks_first_borrow_book_button() throws InterruptedException {
         // click show records dropdown
+        Thread.sleep(2000);
         Select select=new Select(dashBoardPage.recordsDropdown);
         select.selectByValue("100");
+        dashBoardPage.aborrowbookButton.click();
 
     }
     @Then("the user see the confirmation message")
     public void the_user_see_the_confirmation_message() {
-
+        Assert.assertTrue(dashBoardPage.warningMessage.isDisplayed());
     }
 }
